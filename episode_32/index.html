@@ -1,1 +1,78 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episode 32</title>
+  <style>
+    /* Style global de la page */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    /* Liens - Etat non visité */
+    a:link {
+      color: red;
+      text-decoration: none; /* Supprimer le soulignement par défaut */
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.2s ease; /* Animation pour transitions */
+    }
+
+    /* Liens - Etat visité */
+    a:visited {
+      color: green;
+    }
+
+    /* Liens - Au survol de la souris */
+    a:hover {
+      color: hotpink;
+      transform: scale(1.1); /* Léger agrandissement au survol */
+    }
+
+    /* Liens - Lorsqu'ils sont activés (cliqués) */
+    a:active {
+      color: blue;
+    }
+
+    /* Lien au survol de la souris et actif */
+    a:hover, a:focus {
+      text-decoration: underline; /* Souligner au survol ou focus */
+    }
+
+    /* Section des notes et informations */
+    p {
+      text-align: center;
+      font-size: 1.2em;
+      color: #333;
+    }
+    
+    b {
+      font-size: 1.1em;
+    }
+
+    /* Pour centrer le texte des paragraphes */
+    p b {
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Styling a link depending on state</h2>
+
+  <p><b><a href="https://www.example.com" target="_blank">This is a link</a></b></p>
+
+  <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+  <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+</body>
+</html>

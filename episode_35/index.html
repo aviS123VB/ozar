@@ -1,1 +1,126 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout</title>
+  <style>
+    /* Style général du body */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    /* Titre principal */
+    h1 {
+      text-align: center;
+      color: #2196F3;
+      margin-top: 20px;
+    }
+
+    /* Grille de mise en page */
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+      grid-gap: 15px; /* Espacement entre les éléments */
+      background-color: #2196F3;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    /* Styles pour chaque section */
+    .grid-container > div {
+      background-color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      padding: 30px;
+      font-size: 1.5em;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+
+    /* Pour la section header */
+    .item1 {
+      background-color: #4CAF50; /* Couleur spécifique pour le header */
+      color: rgb(255, 0, 0);
+      font-size: 2em;
+    }
+
+    /* Pour la section footer */
+    .item5 {
+      background-color: #FF9800; /* Couleur spécifique pour le footer */
+      color: rgb(255, 0, 0);
+      font-size: 1.5em;
+    }
+
+    /* Pour la section menu */
+    .item2 {
+      background-color: #FFC107;
+      color:  rgb(255, 0, 0);
+    }
+
+    /* Pour la section main */
+    .item3 {
+      background-color: #8BC34A;
+      color:  rgb(255, 0, 0);
+    }
+
+    /* Pour la section right */
+    .item4 {
+      background-color: #3F51B5;
+      color:  rgb(255, 0, 0);
+    }
+
+    /* Média Query pour les petits écrans */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-areas:
+          'header header header'
+          'menu main main'
+          'right footer footer';
+      }
+    }
+
+    /* Média Query pour les écrans très petits (mobiles) */
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-areas:
+          'header'
+          'menu'
+          'main'
+          'right'
+          'footer';
+      }
+      .grid-container > div {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Grid Layout</h1>
+
+
+
+  <div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Menu</div>
+    <div class="item3">Main</div>
+    <div class="item4">Right</div>
+    <div class="item5">Footer</div>
+  </div>
+
+</body>
+</html>
