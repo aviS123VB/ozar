@@ -65,14 +65,14 @@ Félicitations, jeune dresseur ! Tu as triomphé des Collines HTML et es prêt �
 - **Objectif** : Utilise des classes CSS.
 - **Description** : Crée des classes CSS dans ton fichier CSS et applique-les aux éléments HTML.
 - **XP** : 15 points
-- **Documentation** : [CSS Classes](https://www.w3schools.com/css/css_class.asp)
+- **Documentation** : [CSS Classes](https://www.w3schools.com/css/css_selectors.asp)
 
 **Mission 30 : Les totems**
 
 - **Objectif** : Utilise des ID CSS.
 - **Description** : Crée des ID CSS dans ton fichier CSS et applique-les aux éléments HTML.
 - **XP** : 15 points
-- **Documentation** : [CSS ID](https://www.w3schools.com/css/css_id.asp)
+- **Documentation** : [CSS ID](https://www.w3schools.com/cssref/sel_id.php)
 
 ---
 
