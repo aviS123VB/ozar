@@ -1,1 +1,123 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Skills</title>
+<style>
+* {box-sizing: border-box; margin: 0; padding: 0;}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.container {
+  width: 80%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.skills {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 0%;
+  transition: width 1s ease-in-out;
+}
+
+.html {background: #04AA6D;}
+.css {background: #2196F3;}
+.js {background: #f44336;}
+.php {background: #808080;}
+
+.skills:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .skills {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .container {
+    width: 90%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>My Skills</h1>
+
+<p>HTML</p>
+<div class="container">
+  <div class="skills html" style="width: 90%;">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css" style="width: 80%;">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js" style="width: 65%;">65%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php" style="width: 60%;">60%</div>
+</div>
+
+<script>
+  window.onload = function() {
+    const skills = document.querySelectorAll('.skills');
+    skills.forEach(skill => {
+      let width = skill.style.width;
+      skill.style.width = '0';
+      setTimeout(() => {
+        skill.style.width = width;
+      }, 100); // Delay to trigger the animation
+    });
+  }
+</script>
+
+</body>
+</html>

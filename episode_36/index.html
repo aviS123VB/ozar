@@ -1,1 +1,37 @@
 <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: color-change;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes color-change {
+  0% { background-color: red; transform: scale(1); }
+  25% { background-color: rgb(17, 59, 249); transform: scale(1); }
+  50% { background-color: orange; transform: scale(1.2); }
+  100% { background-color: yellow; transform: scale(1); }
+}
+</style>
+</head>
+<body>
+
+<h1>voici l'animation </h1>
+
+<div>Animation</div>
+
+</body>
+</html>

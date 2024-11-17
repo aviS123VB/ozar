@@ -1,1 +1,75 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learn PHP</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+
+  .card {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 30px;
+    color: #333;
+  }
+
+  .card h2 {
+    font-size: 28px;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+
+  .card p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+
+  .card a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .card a:hover {
+    background-color: #2980b9;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <?php
+    $title = "Learn PHP";
+    $site = "W3Schools.com";
+    echo "<h2>W3Schools</h2>";
+    echo "<p>Master PHP programming at <a href='https://www.w3schools.com' target='_blank'>W3Schools</a></p>";
+  ?>
+</div>
+
+</body>
+</html>
